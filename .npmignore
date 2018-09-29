@@ -1,0 +1,11 @@
+assets/
+fonts/
+tmp/
+.*
+_*
+!.csscomb.json
+!.csscomb.dist.json
+!.gitignore
+!.gitattributes
+!.hound.yml
+!.scss-lint.yml

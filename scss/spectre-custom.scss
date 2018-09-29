@@ -1,0 +1,15 @@
+// Define variables to override default ones
+
+// Core colors
+$primary-color: #ffc316 ;
+$primary-color-dark: darken($primary-color, 5%);
+$primary-color-light: lighten($primary-color, 5%);
+$secondary-color: lighten($primary-color, 37.5%);
+$secondary-color-dark: darken($secondary-color, 5%);
+$secondary-color-light: lighten($secondary-color, 5%);
+$accent-color: #f2582f;
+$accent-color-dark: darken($accent-color, 5%);
+$accent-color-light: lighten($accent-color, 5%);
+
+// Import full Spectre source code
+@import "node_modules/spectre.css/src/spectre";
