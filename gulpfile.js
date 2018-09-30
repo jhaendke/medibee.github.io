@@ -143,7 +143,7 @@ gulp.task('sp-prefix', function() {
 ###
 */
 
-/*
+
 // Render Bootstrap sass & minify
 gulp.task('b4-sass', function() {
   return gulp.src(['node_modules/bootstrap/scss/bootstrap*.scss', 'scss/bootstrap-*.scss'])
@@ -252,16 +252,25 @@ gulp.task('copy-flickity', function() {
       //.pipe(browserSync.stream());
 });
 
+// Copy BOOTSTRAP GRID (copy-only)
+/*
+gulp.task('copy-bootstrap', function() {
+  return gulp.src(['node_modules/bootstrap/dist/css/bootstrap-grid.min.css'])
+      .pipe(gulp.dest("css"));
+      //.pipe(browserSync.stream());
+});
+*/
+
 
 /*
 MERGE TASKS
 */
 
 gulp.task('build-sp', ['sp-sass', 'sp-docs', 'sp-custom']);
-//gulp.task('build-b4', ['b4-sass', 'b4-js']);
+gulp.task('build-b4', ['b4-sass', 'b4-js']);
 //gulp.task('build-hb', ['hb-sass', 'hb-custom']);
 gulp.task('copy-dists', ['copy-holder', 'copy-typed', 'copy-animate', 'copy-flickity']);
 
 gulp.task('build-sp-prefix', ['sp-prefix']);
 
-gulp.task('default', ['build-sp', 'copy-dists']);
+gulp.task('default', ['build-b4', 'build-sp', 'build-sp-prefix', 'copy-dists']);

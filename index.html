@@ -5,212 +5,131 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>MediBee - Children healthcare initiative that stays by your side</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/css/Brands.css">
-    <link rel="stylesheet" href="assets/css/Features-Clean.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
-    <link rel="stylesheet" href="assets/css/Testimonials.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="We accompany your family." />
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <!--standard:head-->
+
+    <!--
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="older-iPhone.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="iPhone-6-Plus.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="iPad-Retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="iPad-Pro.png">
+    <link rel="shortcut icon" sizes="196x196" href="favicon-196.png">
+    -->
+
+    <!--standard:styles linked-->
+    <!--ORDER matters, last loaded override others!-->
+
+    <!--
+    <link rel="stylesheet" href="css/spectre.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/spectre-exp.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/spectre-icons.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+    -->
+
+    <link rel="stylesheet" href="css/spectre-custom.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-custom.css" type="text/css" media="all" />
+    <!--<link rel="stylesheet" href="css/hamburgers-custom.css" type="text/css">-->
+
+    <!--standard:styles inline-->
+    <style>
+        html, body {
+            height: 100vh;
+            /*
+            margin: 0px;
+            min-height: 100%;
+            background-color: rgb(255,195,22);
+            background: -moz-linear-gradient(135deg, rgba(255,195,22,0.647963408996411) 0%, rgba(242,88,47,0.65) 69%, rgba(255,116,155,0.64) 100%);
+            background: -webkit-linear-gradient(135deg, rgba(255,195,22,0.647963408996411) 0%, rgba(242,88,47,0.65) 69%, rgba(255,116,155,0.64) 100%);
+            background: linear-gradient(135deg, rgba(255,195,22,0.647963408996411) 0%, rgba(242,88,47,0.65) 69%, rgba(255,116,155,0.64) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc316",endColorstr="#ff749b",GradientType=1);
+            background: linear-gradient(135deg, rgba(255,195,22,0.647963408996411) 0%, rgba(242,88,47,0.65) 69%, rgba(255,116,155,0.64) 100%) url("/assets/alberto-casetta-349138-unsplash_edit_toneA_1920.jpg") no-repeat contain;
+            */
+        }
+        .intro {
+            /*
+            background: rgb(255,195,22);
+            background: -moz-linear-gradient(135deg, rgba(255,195,22,0.647963408996411) 0%, rgba(242,88,47,0.65) 69%, rgba(255,116,155,0.64) 100%);
+            background: -webkit-linear-gradient(135deg, rgba(255,195,22,0.647963408996411) 0%, rgba(242,88,47,0.65) 69%, rgba(255,116,155,0.64) 100%);
+            background: linear-gradient(135deg, rgba(255,195,22,0.647963408996411) 0%, rgba(242,88,47,0.65) 69%, rgba(255,116,155,0.64) 100%), url("assets/alberto-casetta-349138-unsplash_edit_toneA_1920.jpg");
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc316",endColorstr="#ff749b",GradientType=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            */
+
+            background: rgb(255,195,22);
+            background: -moz-linear-gradient(135deg, rgba(255,195,22,0.4) 0%, rgba(242,88,47,0.4) 69%, rgba(255,116,155,0.4) 100%);
+            background: -webkit-linear-gradient(135deg, rgba(255,195,22,0.4) 0%, rgba(242,88,47,0.4) 69%, rgba(255,116,155,0.4) 100%);
+            background: linear-gradient(135deg, rgba(255,195,22,0.4) 0%, rgba(242,88,47,0.4) 69%, rgba(255,116,155,0.4) 100%), url("assets/alberto-casetta-349138-unsplash_edit_toneA_1920.jpg");
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc316",endColorstr="#ff749b",GradientType=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            /*background-color: #FAFCFD;*/
+
+        }
+
+    </style>
+
+    <!--standard:scripts linked-->  
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126704702-1"></script>
+
+    <!--standard:scripts inline-->
+
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126704702-1');
+    </script>
+
+
+            <!-- Facebook Pixel Code -->
+
 </head>
 
 <body>
-    <header>
-        <div class="header"><div>
-            <!-- style="background-image: url(&quot;assets/img/alberto-casetta-349138-unsplash.jpg&quot;);background-size: cover;background-repeat: no-repeat;" -->
-            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Company Name<img></a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                        <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Link</a></li>
-                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
-                                <div class="dropdown-menu" role="menu">
-                                    <a class="dropdown-item" role="presentation" href="#">First Item</a>
-                                    <a class="dropdown-item" role="presentation" href="#">Second Item</a>
-                                    <a class="dropdown-item" role="presentation" href="#">Third Item</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <form class="form-inline mr-auto" target="_self">
-                            <div class="form-group">
-                                <label for="search-field"><i class="fa fa-search"></i></label>
-                                <input class="form-control search-field" type="search" name="search" id="search-field">
-                            </div>
-                        </form>
-                        <span class="navbar-text"> 
-                            <a href="#" class="login">Log In</a>
-                        </span>
-                        <a class="btn btn-light action-button" role="button" href="#">Sign Up</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="container hero">
-                <div class="row">
-                    <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1>The revolution is here.</h1>
-                        <p>Mauris egestas tellus non ex condimentum, ac ullamcorper sapien dictum. Nam consequat neque quis sapien viverra convallis. In non tempus lorem. </p><button class="btn btn-light btn-lg action-button" type="button">Learn More</button></div>
-                    <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block">
-                        <img style="background-position: center;">
-                    </div>
-            </div>
-        </div>
-        </div>
-    </header>
-    <div class="brands">
-        <a href="#"> 
-            <img src="assets/img/instacart.png">
-            <img src="assets/img/kickstarter.png">
-            <img src="assets/img/lyft.png">
-            <img src="assets/img/shopify.png">
-            <img src="assets/img/pinterest.png">
-            <img src="assets/img/twitter.png">
-        </a>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Heading</h1>
-                <p>Paragraph</p>
-            </div>
-        </div>
-    </div>
-    <div class="features-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Features</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-            </div>
-            <div class="row features">
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-map-marker icon"></i>
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
-                    <h3 class="name">Always available</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon"></i>
-                    <h3 class="name">Customizable</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-leaf icon"></i>
-                    <h3 class="name">Organic</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-plane icon"></i>
-                    <h3 class="name">Fast</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-phone icon"></i>
-                    <h3 class="name">Mobile-first</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <main>
-        <section id="partner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-xl-5"></div>
-                    <div class="col-xl-7"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7"></div>
-                    <div class="col-xl-5"></div>
-                </div>
-            </div>
-        </section>
-        <section id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <div class="testimonials-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Testimonials </h2>
-                <p class="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
-            </div>
-            <div class="row people">
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box">
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                    </div>
-                    <div class="author"><img class="rounded-circle" src="assets/img/1.jpg">
-                        <h5 class="name">Ben Johnson</h5>
-                        <p class="title">CEO of Company Inc.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box">
-                        <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
-                    </div>
-                    <div class="author"><img class="rounded-circle" src="assets/img/3.jpg">
-                        <h5 class="name">Carl Kent</h5>
-                        <p class="title">Founder of Style Co.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box">
-                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-                    </div>
-                    <div class="author"><img class="rounded-circle" src="assets/img/2.jpg">
-                        <h5 class="name">Emily Clark</h5>
-                        <p class="title">Owner of Creative Ltd.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="newsletter-subscribe">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Subscribe to our Newsletter</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-            </div>
-            <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-                <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
-            </form>
-        </div>
-    </div>
-    <div class="footer">
-        <footer>
-            <div class="social">
-                <a href="#"><i class="icon ion-social-instagram"></i></a>
-                <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                <a href="#"><i class="icon ion-social-twitter"></i></a>
-                <a href="#"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Company Name © 2017</p>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
 
-</html>
+    <main class="h-100">
+        <div class="intro container-fluid h-100">
+            <div class="row h-100">
+                <div class="col"></div>
+                <div class="col-6-lg col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="p-3 rounded-lg shadow-sm" style="background: rgba(255,255,255,0.95)">
+                            <img src="assets/logo_artb_transp_web.svg" class="d-block w-100" alt="medib.ee logo">
+                            <!--<img src="assets/logo_artb_transp_web.svg" class="img-fluid w-100" alt="medib.ee logo">-->
+                            <div class="d-block">
+                                <p></p>
+                                <p class="font-weight-light text-muted text-center">
+                                    Made with&nbsp;♥&nbsp;in Tartu, Estonia<br>
+                                    <br>
+                                    mail@medib.ee<br>
+                                    2018
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </main>
+
+    <!--standard:navigation-->
+
+    <!--page-specific:content-->
+
+    <!--standard:footer-->
+
+    <!--standard:scripts-->
+
+    <!--page-specific:scripts-->
+
+</body>
